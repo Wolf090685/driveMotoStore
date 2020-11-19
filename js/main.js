@@ -46,6 +46,7 @@ $(function () {
             {
                 breakpoint: 1201,
                 settings: {
+                    arrows: false,
                     slidesToShow: 3,
                     dots: true
                 }
@@ -53,6 +54,7 @@ $(function () {
             {
                 breakpoint: 870,
                 settings: {
+                    arrows: false,
                     slidesToShow: 2,
                     dots: true
                 }
@@ -60,6 +62,7 @@ $(function () {
             {
                 breakpoint: 590,
                 settings: {
+                    arrows: false,
                     slidesToShow: 1,
                     dots: true
                 }
