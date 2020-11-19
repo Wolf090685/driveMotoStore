@@ -148,6 +148,10 @@
     .product-card__price-old {
         margin-top: 45px;
     }
+    
+    .product-card__btn {
+    margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 940px) {
@@ -315,7 +319,7 @@
     }
 
     .footer-form__input {
-        padding: 0 16px;
+        padding: 0 7px;
     }
 
     .footer__top-social.footer__top-item {
@@ -344,5 +348,11 @@
 
     .pagination-list__item {
         margin: 0;
+    }
+}
+
+@media (max-width: 374px) {
+    .card__input-search {
+        margin-top: 20px;
     }
 }
