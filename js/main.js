@@ -100,18 +100,17 @@ $(function () {
         normalFill: '#c4c4c4',
         spacing: '7px'
     });
-    // mobile menu show/hide
+    // mobile menu
     $('.menu__btn').on('click', function (event) {
         $('.mobile-menu__list').toggleClass('mobile-menu__list--active');
+        $(this).toggleClass('menu__btn--active');
     });
-    // Add class "active" to menu
-    $('.mobile-menu__link').on('click', function (event) {
-        event.preventDefault();
+    $('.mobile-menu__link').on('click', function () {
         $('.mobile-menu__link').removeClass('mobile-menu__link--active');
         $(this).addClass('mobile-menu__link--active');
         $('.mobile-menu__list').removeClass('mobile-menu__list--active');
+        $('.menu__btn').removeClass('menu__btn--active');
     });
-
     // footer dropdown for mobile
     $('.footer__top-drop').on('click', function () {
         $(this).next().slideToggle(500);
