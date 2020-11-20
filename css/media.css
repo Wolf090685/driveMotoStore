@@ -63,6 +63,7 @@
         background-color: transparent;
         border: none;
         cursor: pointer;
+        outline: none;
     }
 
     .menu__btn-line {
@@ -72,6 +73,7 @@
         height: 3px;
         background: #2F3035;
         border-radius: 3px;
+        transition: all .3s linear;
     }
 
     .menu__mobile-line-wrapper {
