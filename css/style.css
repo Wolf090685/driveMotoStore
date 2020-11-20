@@ -111,6 +111,18 @@ body {
     transform: translateX(0%);
 }
 
+.menu__btn--active .menu__btn-line:first-child {
+    transform: translateY(6px) rotate(-135deg);
+}
+
+.menu__btn--active .menu__btn-line:nth-child(2) {
+    display: none;
+}
+
+.menu__btn--active .menu__btn-line:last-child {
+    transform: translateY(-6px) rotate(135deg);
+}
+
 .mobile-menu__item {
     position: relative;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
