@@ -120,4 +120,20 @@ $(function () {
     $('.aside__btn').on('click', function () {
         $(this).next().slideToggle(500);
     });
+    // btn to-top       
+    $(window).on('scroll', function () {
+        let scrolled = window.pageYOffset;
+        let btn = document.querySelector('.to-top'); 
+        if (scrolled > 400) {
+            btn.style.opacity = 1;
+        } else {
+            btn.style.opacity = 0;
+        }      
+    });
+    $('.to-top').on('click', function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: 20
+        }, 600);
+    }); 
 });
